@@ -1,4 +1,4 @@
-# SelectelSharp
+# SelectelSharpCore
 ### Selectel Cloud Storage .NET SDK 
 
 SelectelSharp is .net SDK for Selectel Cloud Storage written on C# in Async style.
