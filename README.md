@@ -7,6 +7,13 @@ At this moment most of API methods are implemented, but some of them are still i
 For more information see: 
 [Selectel.com](https://selectel.com/)
 
+Nuget: https://www.nuget.org/packages/SelectelSharpCore/0.8.0
+
+```cs
+PM> Install-Package SelectelSharpCore
+```
+
+
 ## Basic usage
 
 **Create client**
