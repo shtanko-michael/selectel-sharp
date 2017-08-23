@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>SelectelSharpCore</id>
+    <version>0.8.0</version>
+    <authors>ordenilluminaten</authors>
+    <owners>ordenilluminaten</owners>
+    <licenseUrl>https://github.com/ordenilluminaten/selectel-sharp/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/ordenilluminaten/selectel-sharp</projectUrl>
+    <iconUrl>https://avatars2.githubusercontent.com/u/30750111?v=4&u=b6ca8818250c0f696986cf3afc600233df79b610&s=400</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Selectel core client</description>
+    <releaseNotes>First release of Selectel SDK for .NET Core</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>selectel sdk core client</tags>
+	  <dependencies>
+        <group targetFramework=".NETStandard1.3">
+             <dependency id="Newtonsoft.Json" version="10.0.3" exclude="Build,Analyzers" />
+			 <dependency id="NETStandard.Library" version="1.3" exclude="Build,Analyzers" />
+		</group>
+  </dependencies>
+  </metadata>
+  <files>
+	<file src="SelectelSharpCore\bin\Release\netstandard1.3\SelectelSharpCore.deps.json" target="lib\netstandard1.3\SelectelSharpCore.deps.json" />
+	<file src="SelectelSharpCore\bin\Release\netstandard1.3\SelectelSharpCore.dll" target="lib\netstandard1.3\SelectelSharpCore.dll" />
+	<file src="SelectelSharpCore\bin\Release\netstandard1.3\SelectelSharpCore.pdb" target="lib\netstandard1.3\SelectelSharpCore.pdb" />
+  </files>
+</package>
