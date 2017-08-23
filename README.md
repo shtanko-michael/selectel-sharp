@@ -1,5 +1,5 @@
 # SelectelSharpCore
-### Selectel Cloud Storage .NET SDK 
+### Selectel Cloud Storage .NET Core SDK (.NETStandart 1.3)
 
 SelectelSharp is .net SDK for Selectel Cloud Storage written on C# in Async style.
 At this moment most of API methods are implemented, but some of them are still in development.
@@ -35,12 +35,14 @@ If authorization was successful, client will recieve authrization token. In othe
 
 **Call API methods**
 
-Now you could could Api methods, forexample:
+Now you could could Api methods, for example:
 ```cs
 var result = await client.CreateContainerAsync("new-container");
 ```
 
 ## Implemented api methods
+**Storage methods**
+* GetStorageInfoAsync
 
 **Container methods**
 * GetContainersListAsync
