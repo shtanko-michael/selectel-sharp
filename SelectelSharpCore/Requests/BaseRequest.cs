@@ -131,8 +131,9 @@ namespace SelectelSharpCore.Requests {
             }
 
             // set Content-Type header
+            MediaTypeHeaderValue contentTypeHeader = null;
             if (headers.ContainsKey(HeaderKeys.ContentType)) {
-                request.Content.Headers.ContentType = new MediaTypeHeaderValue(headers[HeaderKeys.ContentType]);
+                contentTypeHeader = new MediaTypeHeaderValue(headers[HeaderKeys.ContentType]);
                 headers.Remove(HeaderKeys.ContentType);
             }
 
@@ -154,6 +155,8 @@ namespace SelectelSharpCore.Requests {
 
             if (File != null && File.Length > 0) {
                 request.Content = new ByteArrayContent(File);
+                if (contentTypeHeader != null)
+                    request.Content.Headers.ContentType = contentTypeHeader;
             }
 
             HttpStatusCode status = HttpStatusCode.OK;
